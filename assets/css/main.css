@@ -4,8 +4,156 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "shabnam";
+  src: url("/assets/fonts/Shabnam.woff") format("woff2"), url("./assets/fonts/Shabnam.woff2") format("woff2");
+}
+
 html,
 body {
   width: 100%;
+  font-family: "shabnam";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header {
+  height: 16rem;
+}
+
+.main {
+  height: inherit;
+}
+
+.bg-logo,
+.bg-logo img {
+  height: inherit;
+}
+
+.logo-camel {
+  top: 10%;
+  right: 51%;
+}
+
+.logo-camel img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.logo-camel span {
+  font-size: 2rem;
+  color: #007f62;
+}
+
+.menu {
+  margin-top: 50px;
+  padding-right: 50px;
+}
+
+.menu ul li a {
+  font-size: 1.1vw;
+}
+
+.menu li a {
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.menu li a:hover {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.sabt {
+  margin-top: 40px;
+}
+
+.sabt button {
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 2.5rem;
+  padding: 5px 8px;
+  background: linear-gradient(to top, #e35325, #ff8a65);
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 0.7rem 2rem 0 rgba(227, 83, 39, 0.226);
+}
+
+.logo-signal {
+  height: 100%;
+  position: relative;
+}
+
+.logo-signal img {
+  height: 220px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header2 {
+  height: 7rem;
+  width: 100%;
+  background-color: #e0e0e0;
+}
+
+.close-menu span {
+  font-size: 20px;
+  color: #007f62;
+  margin-right: 10px;
+}
+
+.camel-comel {
+  height: 40rem;
+  width: 100%;
+  left: 15rem;
+}
+
+.logo-camel2 {
+  right: 50%;
+  width: 40%;
+}
+
+.logo-camel2 img {
+  width: inherit;
+}
+
+.logo-camel2 span {
+  font-size: 2rem;
+  color: #007f62;
+}
+
+.none {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 990px) {
+  .show {
+    display: none;
+  }
+  .none {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

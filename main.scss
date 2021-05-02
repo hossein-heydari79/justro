@@ -1,12 +1,12 @@
+@font-face {
+    font-family: "shabnam";
+    src: url("../fonts/Shabnam.ttf")format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: "shabnam";
-    src: url("/assets/fonts/Shabnam.woff")format("woff2"), url("./assets/fonts/Shabnam.woff2")format("woff2");
 }
 
 html,
@@ -45,7 +45,7 @@ a {
 }
 
 .logo-camel {
-    top: 10%;
+    top: 15%;
     right: 51%;
     img {
         width: 6rem;
@@ -61,18 +61,18 @@ a {
     margin-top: 50px;
     padding-right: 50px;
     ul li a {
-        font-size: 1.1vw;
+        font-size: 1vw;
     }
     li a {
         transition: all 0.3s ease;
         padding: 0.5rem;
         border-radius: 0.5rem;
-    }
-    li a:hover {
-        background-color: black;
-        color: white;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
+        &:hover {
+            background-color: black;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
     }
 }
 
@@ -139,6 +139,84 @@ a {
 
 .show {
     display: block;
+}
+
+.header-section {
+    margin-top: 5rem;
+}
+
+.title-section {
+    text-align: right;
+    line-height: 2.5rem;
+    p {
+        font-size: 4rem;
+        color: rgb(0, 127, 98);
+        span {
+            border-bottom: 2px solid rgb(0, 127, 98);
+        }
+    }
+    div {
+        margin-top: 3rem;
+        direction: rtl;
+        font-size: 1.4rem;
+    }
+}
+
+.logo-section {
+    img {
+        width: inherit;
+    }
+}
+
+@keyframes row {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes row2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1500px;
+    }
+}
+
+.div-water {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background: url("../images/bg-wave.png");
+    background-size: 150rem 20rem;
+}
+
+.div1 {
+    animation: row 30s linear infinite;
+    z-index: 2;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.div2 {
+    animation: row2 15s linear infinite;
+    z-index: 1;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 1rem;
 }
 
 @media screen and (max-width: 990px) {

@@ -238,12 +238,12 @@ a:hover {
 }
 
 .div-mobile img {
-  width: 65%;
+  width: 35rem;
 }
 
 .div-matn {
   border-right: 2px solid #00f4bd;
-  height: 100%;
+  height: inherit;
 }
 
 .matn {
@@ -266,7 +266,7 @@ a:hover {
   position: absolute;
   top: 0;
   right: 48%;
-  height: 660px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,6 +313,140 @@ a:hover {
 
 .topm {
   padding-top: 0;
+  height: inherit;
+}
+
+.div-download {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.43rem 2.5rem 0 #e5e5e5;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.div-download .div-download-title {
+  font-size: 2.2rem;
+  color: #007f62;
+  margin: 2rem;
+}
+
+.div-download .div-download-des {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0 2rem;
+}
+
+.download {
+  margin-top: 8rem;
+}
+
+.div-number {
+  margin: 5rem;
+  border: 1px solid #eeeeee;
+  border-radius: 2.5rem;
+  background-color: #fafafa;
+}
+
+.div-number input {
+  background-color: #fafafa;
+  padding: 0 1rem;
+  direction: ltr;
+  width: 20rem;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  border-radius: 2.5rem;
+}
+
+.div-number input::placeholder {
+  font-size: 1.5rem;
+}
+
+.div-number button {
+  width: 13rem;
+  height: 3.5rem;
+  border-radius: 2.5rem;
+  padding: 5px 8px;
+  background: linear-gradient(to top, #e35325, #ff8a65);
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 0.7rem 2rem 0 rgba(227, 83, 39, 0.226);
+}
+
+.logo-download {
+  width: 9rem;
+  height: 9rem;
+}
+
+.logo-download img {
+  width: inherit;
+  height: inherit;
+}
+
+.icon-download {
+  margin-bottom: 3rem;
+}
+
+.icon-download button {
+  width: 13rem;
+  height: 3.5rem;
+  border-radius: 2.5rem;
+  padding: 5px 8px;
+  background: linear-gradient(to top, #00a680, #00f4bd);
+  color: white;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.div-down {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.des-div-t {
+  font-size: 3rem;
+  color: white;
+}
+
+.des-div-des {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.bg-des {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 35rem;
+  background-image: url("../images/022_bg_amadegisafar.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.des-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.des-div button {
+  width: 15rem;
+  height: 3.5rem;
+  border-radius: 2.5rem;
+  padding: 0px 10px;
+  background: linear-gradient(to top, #e35325, #ff8a65);
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 0.7rem 2rem 0 rgba(227, 83, 39, 0.226);
 }
 
 @media screen and (max-width: 1100px) {
@@ -363,6 +497,56 @@ a:hover {
   }
   .topm {
     padding-top: 7rem;
+  }
+  .div-main {
+    height: auto;
+  }
+  .div-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .div-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+  }
+  .div-number button {
+    margin-top: 2rem;
+  }
+  .div-number input {
+    width: 30rem;
+    box-shadow: 0.25rem 0.43rem 1.5rem 0 #ccc;
+  }
+  .icon-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-download button {
+    margin: 1rem 0;
+  }
+  .bg-des {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: auto;
+    background-image: none;
+    background-color: lightgray;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  .des-div {
+    padding: 2rem 0;
+  }
+  .des-div-des,
+  .des-div-t {
+    color: black;
   }
 }
 /*# sourceMappingURL=main.css.map */
